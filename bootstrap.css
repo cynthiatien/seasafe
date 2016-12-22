@@ -227,8 +227,10 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #ffffff;
+  background-image: url("images/blurmap.jpeg");
+
 }
+
 
 a {
   color: #0088cc;
@@ -657,6 +659,7 @@ p {
   font-size: 21px;
   font-weight: 200;
   line-height: 30px;
+  
 }
 
 small {
