@@ -50,6 +50,10 @@
         font:arial;
       }
 
+      p {
+        text-indent: 50px;
+      }
+
       #map {
         height: 300px;
         width: 100%;
@@ -61,7 +65,7 @@
 
 
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -69,29 +73,47 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="index.html">Seasafe Marine Supply </a>
+          <a class="brand" href="index.html">Seasafe Marine Supply Co. </a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
                 <a href="about.html">About Us</a>
               </li>
-              <li class="">
-                <a href="products.html">Products</a>
-              </li>
-              <li class="">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="paperprods.html">Paper</a></li>
+                    <li><a href="digitalprods.html">Digital</a></li>
+                </ul>
+            </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">News<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="new.html">Latest News</a></li>
+                    <li><a href="suppliers.html">Suppliers</a></li>
+                </ul>
+            </li>
+            <li class="">
                 <a href="contact.html">Contact Us</a>
-              </li>
+             </li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
-
+    </nav>
     <div id="home">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 ">
                   <br><br><br><br>
+                    <p class="lead">
+                        Seasafe Marine Supply Co., founded in 1979, is the first company founded in Taiwan to serve local shipping industries by supplying navigational charts, instruments and publications, as well as providing the services of chart correction, chart information consulting, etc. 
+                    </p>
+                    <p class="lead">
+                        We are located in Taipei, the capital of Taiwan, while all other suppliers are located in Kaohsiung. We also have a satellite office in Keelung harbor. These locations give us proximity to the head offices of major shipping companies, as well as the major international airport and harbor in Taiwan. 
+                    </p>
                     <p class="lead">
                         After serving in the Custom fleet, our founder, Captain Ping-Chao Chiu, created this company serve the needs of the local shipping industries, providing his advice and insight to best help our customers. <br><br>
                         We currently have 8 employees: General Manager, Sales Manager, Accountant, 2 for chart correction and 3 for packing and delivery. <br> <br> We are also an agent for the hydrographic office of Taiwan, NACO of USA, and a subsidiary of Kelvin Hughes LTD for Admiralty Charts.
@@ -139,9 +161,10 @@
 
     <footer>
       <div class="container">
-        <h4> Office Hours: 8:30 AM - 7:00 PM. Office Phone Number: +886-227-698-154. Emergyency After Hours Contact Number: +886-935-233-515</h4>
+        <h4> Office Hours: 8:30 AM - 7:00 PM. <br> Office Phone Number: +886-227-698-154. <br> Emergyency After Hours Contact Number: +886-935-233-515</h4>
       </div>
     </footer>
-
+ <script src="http://getbootstrap.com/2.3.2/assets/js/jquery.js"></script>
+ <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-dropdown.js"></script>
 
 </div></body></html>

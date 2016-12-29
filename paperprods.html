@@ -61,7 +61,7 @@
 
 
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -69,23 +69,36 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="index.html">Seasafe Marine Supply </a>
+          <a class="brand" href="index.html">Seasafe Marine Supply Co. </a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
                 <a href="about.html">About Us</a>
               </li>
-              <li class="">
-                <a href="products.html">Products</a>
-              </li>
-              <li class="">
+              <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span>
+            </a>
+                <ul class="dropdown-menu">
+                <li><a href="paperprods.html">Paper</a></li>
+                <li><a href="digitalprods.html">Digital</a></li>
+            </ul>
+        </li>
+              <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">News<span class="caret"></span>
+            </a>
+                <ul class="dropdown-menu">
+                <li><a href="new.html">Latest News</a></li>
+                <li><a href="suppliers.html">Suppliers</a></li>
+            </ul>
+        </li>
+        <li class="">
                 <a href="contact.html">Contact Us</a>
-              </li>
+             </li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
+    </nav>
 
     <div id="home">
         <div class="container">
@@ -154,9 +167,10 @@ We are also currently supplying C Map to our customers.
 
     <footer>
       <div class="container">
-        <h4> Office Hours: 8:30 AM - 7:00 PM. Office Phone Number: +886-227-698-154. Emergyency After Hours Contact Number: +886-935-233-515</h4>
+        <h4> Office Hours: 8:30 AM - 7:00 PM. <br> Office Phone Number: +886-227-698-154. <br> Emergyency After Hours Contact Number: +886-935-233-515</h4>
       </div>
     </footer>
-
+ <script src="http://getbootstrap.com/2.3.2/assets/js/jquery.js"></script>
+ <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-dropdown.js"></script>
 
 </div></body></html>
